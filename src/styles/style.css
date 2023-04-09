@@ -1,7 +1,58 @@
-.container h1 {
-    margin-bottom: 1rem;
+body, html {
+	background-color: var(--text-gray);
+	height: 100%;
 }
 
-.buttons-place {
-    margin-top: 1rem;
+.heading-container {
+	background-color: var(--bg-black);
+	position: relative;
+}
+
+.heading {
+	position: relative;
+	display: inline-block;
+	color: var(--bg-nav);
+	border: 2px solid var(--bg-nav);
+	padding: 3rem 5rem;
+	text-align: center;
+	margin: 6rem 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.heading h1 {
+	font-size: 3rem;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.btn-custom {
+	background: transparent;
+	color: var(--bg-nav);
+	border: 1px solid var(--bg-nav);
+	margin-top: 1.5rem;
+	font-size: 2rem;
+	font-weight: 200;
+}
+.btn-custom:hover {
+	cursor: pointer;
+	background: var(--bg-nav);
+	color: black;
+	font-weight: 400;
+	border: 1px solid transparent;
+	transition: all ease-in-out 300ms;
+}
+
+/* output */
+#output {
+	font-size: 1.8rem;
+	width: min(40rem, 80%);
+  margin: 2rem auto;
+  padding: 2rem;
+	color: var(--bg-nav);
+	text-align: center;
+}
+
+#output p {
+	margin-bottom: 0.8rem;
 }
