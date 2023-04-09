@@ -1,0 +1,1 @@
+(()=>{"use strict";var t=document.getElementById("alertButton");t&&t.addEventListener("click",(function(){alert("Your typescript project is working.")}))})();

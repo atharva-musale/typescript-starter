@@ -1,0 +1,127 @@
+/* imported fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/* reset stuff */
+*, *::after, *::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --bg-nav: rgba(0, 214, 170, .8);
+  --bg-black: #161819;
+  --bg-gray: #EAECEF;
+  --text-gray: #3E4147;
+  --text-orange-light: #E36E40;
+  --text-orange-dark: #CC4425;
+  --text-white: #FFFFFF;
+  --text-blue: #8EF2FF;
+  --bg-purple: #694D75;
+  --bg-blue: #407899;
+}
+
+/* typography */
+h1, h2, h3, h4, h5 {
+  font-family: 'Playfair Display', serif;
+}
+
+p, a, li, label {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 0.3px;
+  line-height: 23px;
+}
+
+/* custom element styling */
+.container {
+  width: min(40rem, 80%);
+  padding: 2rem;
+  background-color: var(--bg-gray);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  margin: 3rem auto;
+}
+
+input {
+  border: none;
+  font-size: 1.1rem;
+  font-family: 'Raleway', sans-serif;
+  border-radius: 0.3rem;
+  outline: 1px solid var(--text-gray);
+  padding: 0.2rem 0.4rem;
+}
+input:focus {
+  outline: 2px solid var(--text-blue);
+}
+
+/* Buttons */
+.btn {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  padding: 0.3rem 0.7rem;
+  border: none;
+  color: white;
+  transition: all ease-in-out 400ms;
+}
+
+.btn-orange {
+  background: var(--text-orange-light);
+  border: 1px solid var(--text-orange-light);
+}
+.btn-orange:hover {
+  cursor: pointer;
+  background: var(--text-orange-dark);
+  border: 1px solid var(--text-orange-dark);
+}
+
+.btn-orange-outline {
+  background: transparent;
+  color: var(--text-orange-dark);
+  border: 1px solid var(--text-orange-dark);
+}
+.btn-orange-outline:hover {
+  cursor: pointer;
+  background: var(--text-orange-dark);
+  color: white;
+}
+
+/* Cards */
+.card {
+  width: min(30rem, 80%);
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.25);
+  margin: 3rem auto;
+  border-radius: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card-header {
+  background-color: #fafafa;
+  border-bottom: 1px solid black;
+  padding: 1rem 1rem 0.8rem 1rem;
+}
+
+.card-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.card-sub-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.card-content {
+  margin: 0.8rem 1rem;
+  background-color: white;
+}
+
+.card-footer {
+  background-color: #fafafa;
+  padding: 0.8rem 1rem 1rem 1rem;
+  border-top: 1px solid black;
+}
